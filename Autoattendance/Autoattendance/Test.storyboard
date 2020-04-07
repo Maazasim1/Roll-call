@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7DS-Eb-5fK">
+            <objects>
+                <viewController id="0cy-TB-X8P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OCr-d9-4VO">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BAckground (2)" translatesAutoresizingMaskIntoConstraints="NO" id="SFt-pd-fWV">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="e3g-z4-3lB">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="546.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FASTIANS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQz-2M-UJ4">
+                                <rect key="frame" x="20" y="244" width="984" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER ROLL NO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iWI-UQ-Xy7">
+                                <rect key="frame" x="15" y="480" width="994" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SFt-pd-fWV" firstAttribute="trailing" secondItem="KBQ-cC-6JK" secondAttribute="trailing" id="3cx-nu-1EQ"/>
+                            <constraint firstItem="KBQ-cC-6JK" firstAttribute="trailing" secondItem="e3g-z4-3lB" secondAttribute="trailing" id="54i-ZT-E1I"/>
+                            <constraint firstItem="e3g-z4-3lB" firstAttribute="top" secondItem="OCr-d9-4VO" secondAttribute="top" id="5Up-uF-1tb"/>
+                            <constraint firstItem="e3g-z4-3lB" firstAttribute="leading" secondItem="KBQ-cC-6JK" secondAttribute="leading" id="9ee-H2-YrR"/>
+                            <constraint firstItem="kQz-2M-UJ4" firstAttribute="centerX" secondItem="e3g-z4-3lB" secondAttribute="centerX" id="Bga-WR-qFc"/>
+                            <constraint firstItem="KBQ-cC-6JK" firstAttribute="trailing" secondItem="kQz-2M-UJ4" secondAttribute="trailing" constant="20" id="FQv-Yz-YOx"/>
+                            <constraint firstItem="iWI-UQ-Xy7" firstAttribute="leading" secondItem="KBQ-cC-6JK" secondAttribute="leading" constant="15" id="SV3-Df-ZFo"/>
+                            <constraint firstItem="kQz-2M-UJ4" firstAttribute="leading" secondItem="KBQ-cC-6JK" secondAttribute="leading" constant="20" id="bMm-eh-YC1"/>
+                            <constraint firstItem="kQz-2M-UJ4" firstAttribute="centerY" secondItem="e3g-z4-3lB" secondAttribute="centerY" id="bm6-VN-gVg"/>
+                            <constraint firstItem="SFt-pd-fWV" firstAttribute="top" secondItem="OCr-d9-4VO" secondAttribute="top" id="h6r-Nh-F1t"/>
+                            <constraint firstItem="KBQ-cC-6JK" firstAttribute="bottom" secondItem="iWI-UQ-Xy7" secondAttribute="bottom" constant="852" id="p5g-ig-egy"/>
+                            <constraint firstAttribute="bottom" secondItem="SFt-pd-fWV" secondAttribute="bottom" id="qb0-R2-g2d"/>
+                            <constraint firstItem="KBQ-cC-6JK" firstAttribute="trailing" secondItem="iWI-UQ-Xy7" secondAttribute="trailing" constant="15" id="qnI-Bb-WvA"/>
+                            <constraint firstItem="SFt-pd-fWV" firstAttribute="leading" secondItem="KBQ-cC-6JK" secondAttribute="leading" id="wYk-RV-jeX"/>
+                            <constraint firstItem="e3g-z4-3lB" firstAttribute="height" secondItem="SFt-pd-fWV" secondAttribute="height" multiplier="0.4" id="xLf-KI-BLr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KBQ-cC-6JK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2e-Bu-l9x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-665" y="-150"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BAckground (2)" width="750" height="1334"/>
+        <image name="Background" width="720" height="364"/>
+    </resources>
+</document>
